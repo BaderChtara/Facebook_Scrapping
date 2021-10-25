@@ -10,5 +10,7 @@ services:
   mongo:
     image: mongo
     restart: always
+    environment:
+      MONGO_INITDB_DATABASE: Facebook_scrapper
     ports:
       - 27017:27017
