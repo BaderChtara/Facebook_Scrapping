@@ -8,7 +8,6 @@ collection = db["posts"]
 def insert_post(post):
     return collection.insert_one(post)
 
-
 def insert_posts(posts):
     return collection.insert_many(posts)
 
