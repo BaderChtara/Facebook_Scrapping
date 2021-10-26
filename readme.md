@@ -27,4 +27,4 @@ You can run tests with
 ```bash
 pytest
 ```
-![image description](https://i.imgur.com/a/0tSIwLj)
+![image description](https://i.imgur.com/odJDYmB.jpeg)
