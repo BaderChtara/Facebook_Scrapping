@@ -22,9 +22,3 @@ You can test the endpoints with swagger :
 
 ![image description](https://i.imgur.com/QU7cYfw.png)
 
-## Running tests
-You can run tests with 
-```bash
-pytest
-```
-![image description](https://i.imgur.com/ivxxFhB.png)
