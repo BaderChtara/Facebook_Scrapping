@@ -25,7 +25,15 @@ async def scrap_posts(page_name):
 
 @app.get("/scrap/{page_name}/{pages_count}",summary="Scraps posts from facebook by page name and number of pages")
 async def scrap_pages(page_name, pages_count):
-    return list(get_posts(page_name, pages=int(pages_count)))
+    posts = []
+    try:
+        print("here")
+        posts = list(get_posts(page_name, pages=int(pages_count)))
+        posts = [delete_none(post) for post in posts]
+        insert_posts(posts)
+    except Exception as e:
+        print(e)
+    return posts
 
 @app.get("/read",summary="find all stored posts in database")
 async def find_all():
